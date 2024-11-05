@@ -45,7 +45,3 @@ def jobs_stat():
         print(pd.crosstab([df['User'], df['Name']], df['S']))
     else:
         print("NO JOBS")
-
-# clear .sh files
-# def clear():
-#     1

@@ -28,7 +28,7 @@ job.run()
 + wall_time: ジョブの最大実行時間
 + job_name : ジョブの名前
 
-job.run(dir_path = './DIR', file_name = f'FILE', wall_time = '24:00:00', job_name = f'JOB')
+job.run(dir_path = './DIR', file_name = 'FILE', wall_time = '24:00:00', job_name = 'JOB')
 """
 ```
 
