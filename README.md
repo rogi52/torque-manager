@@ -36,6 +36,7 @@ job.run(dir_path = './DIR', file_name = 'FILE', wall_time = '24:00:00', job_name
 from TorqueManager import jobs_stat
 jobs_stat() # ジョブの統計を出力する
 ```
+`python TorqueManager.py` としてもよい. 
 
 ## 使用例
 ファイル `PROGRAM.py` に記述された関数 `FUNC()` の引数を様々に変化させて実行したいとする. 
