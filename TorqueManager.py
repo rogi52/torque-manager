@@ -28,7 +28,8 @@ class Job:
         import subprocess
         subprocess.run(cmd)
 
-
+import click
+@click.command()
 def jobs_stat():
     import os
     import subprocess
@@ -45,3 +46,5 @@ def jobs_stat():
         print(pd.crosstab([df['User'], df['Name']], df['S']))
     else:
         print("NO JOBS")
+
+if __name__ == '__main__': jobs_stat()
