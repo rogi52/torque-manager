@@ -1,4 +1,4 @@
-# TORQUE Manager
+# [TORQUE Manager](https://rogi52.github.io/torque-manager/)
 + Python から TORQUE にジョブを submit する
   + .sh ファイルを陽に介さない
 
