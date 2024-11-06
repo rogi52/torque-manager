@@ -37,3 +37,28 @@ from TorqueManager import jobs_stat
 jobs_stat() # ジョブの統計を出力する
 ```
 
+## 使用例
+ファイル `PROGRAM.py` に記述された関数 `FUNC()` の引数を様々に変化させて実行したいとする. 
+```python
+import click
+@click.command()
+@click.option('-a')
+@click.option('-b')
+def FUNC(a, b):
+  print(f'a = {a}, b = {b}')
+
+if __name__ == '__main__': FUNC()
+```
+click などでコマンドから実行できるようにしておく.
+次のようにできる. 
+
+```python
+from TorqueManager import Job
+for a in [1, 2, 3]:
+    for b in [4, 5, 6]:
+        job = Job()
+        job.add_cmd('python', 'PROGRAM.py', '-a', f'{a}', '-b', f'{b}')
+        job.run()
+```
+
+
